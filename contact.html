@@ -4,39 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="name">
-            <p class="name-highlight">Iñaki Janeiro</p>
-        </div>
-        <div class="navbar-items">
-            <a href="" class="navbar-items-button">About</a>
-            <a href="portfolio.html" class="navbar-items-button">Portfolio</a>
-            <a href="contact.html" class="navbar-items-button selected">Contact</a>
-        </div>
-    </nav>
-    
-    <section class="main-section">
-        <article class="about-me">
-            <header>
-                <h1>Contact</h1>
-                <hr>
-            </header>
-            <form action="backend.js" method="POST">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="John Smith">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="example@gmail.com">
-                <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-                <input class="form-button" type="submit" value="Submit">
-            </form>
-        </article>
-    </section>
+    <div class="wrapper">
 
-    <footer>
-        <p class="footer-item">Copyright©</p>
-    </footer>
+        <nav>
+            <div class="container">
+                <div class="name">
+                    <p class="name-highlight">Iñaki Janeiro</p>
+                </div>
+                <div class="navbar-items">
+                    <a href="index.html" class="navbar-items-button">About</a>
+                    <a href="portfolio.html" class="navbar-items-button two-border">Portfolio</a>
+                    <a href="contact.html" class="navbar-items-button selected">Contact</a>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="main-section">
+            <article class="about-me container">
+                <div class="article-alignment">
+                    <header>
+                        <h1>Contact</h1>
+                        <hr>
+                    </header>
+                    <form action="backend.js" method="POST" class="flex flex-column">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <input class="form-button" type="submit" value="Submit">
+                    </form>
+                </div>
+            </article>
+        </section>
+        <div class="push"></div>
+    </div>
+            <footer>
+                <p class="footer-item">Copyright ©</p>
+            </footer>
 </body>
 </html>

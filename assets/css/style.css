@@ -1,0 +1,178 @@
+:root {
+    --main-bg-color: #63A9A3;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    float: left;
+}
+
+.name-highlight {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    /* padding: 1em; */
+    background-color: var(--main-bg-color);
+    margin: 0;
+    height: 75px;
+    line-height: 75px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.navbar-items {
+    height: 100%;
+    float: right;
+    /* border:5px solid cyan; */
+}
+
+.navbar-items-button {
+    color: #ABABAB;
+    text-decoration: none;
+    line-height: 75px;
+
+}
+
+.container {
+    width: 940px;
+    overflow: auto;
+    margin: 0 auto;
+    background-color: white;
+}
+
+nav {
+    height: 75px;
+    border-bottom: 1px solid darkgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-section {
+    background-image: url("../images/moroccan-flower.png");
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+
+.article-alignment {
+    padding: 1.5em;
+}
+
+.paragraph {
+    line-height: 2em;
+    color: #807D7A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-picture {
+float: left;
+width: 200px;
+height: 200px;
+margin-right: 1.5em;
+}
+
+footer {
+    background-color: #666666;
+    color: white;
+    height: 100px;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+}
+
+.about-me {
+    width: 960px;
+    color : var(--main-bg-color);
+}
+
+.footer-item {
+    margin: 0;
+    line-height: 100px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+form > label {
+    margin: 0.5em 0 0.5em 0;
+    color: #807D7A;
+}
+
+form > input, textarea {
+    margin: 0 0 0.5em 0;
+    height: 25px;
+    border: 1px solid lightgray;
+    padding: 0.2em 0 0.2em 0.5em;
+    resize: none;
+}
+
+form > textarea {
+    height: 250px;
+    columns: 250;
+}
+
+.flex-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form > input[type=submit] {
+    width: 15%;
+    height: 45px;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+
+figure {
+    position: relative;
+}
+figure > img {
+    width: 200px;
+}
+
+figcaption {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 200px;
+}
+.two-border {
+    margin: 0.5em;
+    padding: 0.5em;
+    border-left: 1px solid #ABABAB;
+    border-right: 1px solid #ABABAB;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -100px;
+}
+
+footer,
+.push {
+    height: 100px;
+}
